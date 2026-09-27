@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kenya 2027 General Election Countdown</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #0f172a;
+            color: #ffffff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+        }
+
+        .container {
+            text-align: center;
+            background: #1e293b;
+            padding: 2.5rem;
+            border-radius: 16px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+            max-width: 600px;
+            width: 90%;
+        }
+
+        h1 {
+            margin-bottom: 0.5rem;
+            font-size: 1.8rem;
+            color: #38bdf8;
+        }
+
+        p.subtitle {
+            color: #94a3b8;
+            margin-bottom: 2rem;
+            font-size: 0.95rem;
+        }
+
+        .countdown {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 1rem;
+        }
+
+        .time-box {
+            background: #0f172a;
+            padding: 1rem 0.5rem;
+            border-radius: 10px;
+            border: 1px solid #334155;
+        }
+
+        .number {
+            font-size: 2.5rem;
+            font-weight: bold;
+            color: #f43f5e;
+            display: block;
+        }
+
+        .label {
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: #94a3b8;
+            margin-top: 0.25rem;
+        }
+
+        @media (max-width: 480px) {
+            .countdown {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Kenya General Election 2027</h1>
+    <p class="subtitle">Countdown to August 10, 2027 (06:00 EAT)</p>
+
+    <div class="countdown">
+        <div class="time-box">
+            <span class="number" id="days">00</span>
+            <span class="label">Days</span>
+        </div>
+        <div class="time-box">
+            <span class="number" id="hours">00</span>
+            <span class="label">Hours</span>
+        </div>
+        <div class="time-box">
+            <span class="number" id="minutes">00</span>
+            <span class="label">Minutes</span>
+        </div>
+        <div class="time-box">
+            <span class="number" id="seconds">00</span>
+            <span class="label">Seconds</span>
+        </div>
+    </div>
+</div>
+
+<script>
+    // Target Date: August 10, 2027 at 06:00:00 EAT (UTC+3)
+    const electionDate = new Date("2027-08-10T06:00:00+03:00").getTime();
+
+    function updateCountdown() {
+        const now = new Date().getTime();
+        const distance = electionDate - now;
+
+        if (distance < 0) {
+            document.querySelector(".container").innerHTML = "<h1>Polls are now open!</h1>";
+            return;
+        }
+
+        // Time calculations for days, hours, minutes, and seconds
+        const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+        const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        const seconds = Math.floor((distance % (1000 * 60)) / 1000[span_0](start_span)The Kenya General Election is scheduled for **August 10, 2027** (the second Tuesday of August as mandated by the Constitution).[span_0](end_span)
+
+       // Here is complete HTML, CSS, and JavaScript code for a countdown timer.
+
+            ```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kenya General Election 2027 Countdown</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: #f4f6f8;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .countdown-card {
+            background: #ffffff;
+            padding: 2.5rem;
+            border-radius: 12px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+            text-align: center;
+            max-width: 600px;
+            width: 90%;
+            border-top: 6px solid #000000; /* Flag Black */
+        }
+
+        .flag-accent {
+            display: flex;
+            height: 6px;
+            margin-bottom: 1.5rem;
+            border-radius: 3px;
+            overflow: hidden;
+        }
+
+        .stripe-black { background: #000000; flex: 1; }
+        .stripe-red   { background: #990000; flex: 1; }
+        .stripe-green { background: #006600; flex: 1; }
+
+        h1 {
+            color: #222;
+            font-size: 1.6rem;
+            margin-bottom: 0.5rem;
+        }
+
+        p.date-label {
+            color: #666;
+            font-size: 0.95rem;
+            margin-bottom: 2rem;
+        }
+
+        .timer-container {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 1rem;
+        }
+
+        .time-box {
+            background: #f8f9fa;
+            border: 1px solid #e9ecef;
+            padding: 1rem 0.5rem;
+            border-radius: 8px;
+        }
+
+        .time-value {
+            display: block;
+            font-size: 2.2rem;
+            font-weight: 700;
+            color: #006600; /* Flag Green */
+        }
+
+        .time-label {
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: #777;
+            margin-top: 0.25rem;
+        }
+
+        @media (max-width: 480px) {
+            .timer-container {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            .time-value {
+                font-size: 1.8rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="countdown-card">
+        <div class="flag-accent">
+            <div class="stripe-black"></div>
+            <div class="stripe-red"></div>
+            <div class="stripe-green"></div>
+        </div>
+
+        <h1>Kenya General Election 2027</h1>
+        <p class="date-label">Countdown to August 10, 2027 (00:00:00 EAT)</p>
+
+        <div class="timer-container">
+            <div class="time-box">
+                <span class="time-value" id="days">00</span>
+                <span class="time-label">Days</span>
+            </div>
+            <div class="time-box">
+                <span class="time-value" id="hours">00</span>
+                <span class="time-label">Hours</span>
+            </div>
+            <div class="time-box">
+                <span class="time-value" id="minutes">00</span>
+                <span class="time-label">Minutes</span>
+            </div>
+            <div class="time-box">
+                <span class="time-value" id="seconds">00</span>
+                <span class="time-label">Seconds</span>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Election target date: August 10, 2027, Midnight EAT (UTC+3)
+        const electionDate = new Date("August 10, 2027 00:00:00 GMT+0300").getTime();
+
+        function updateCountdown() {
+            const now = new Date().getTime();
+            const timeRemaining = electionDate - now;
+
+            if (timeRemaining <= 0) {
+                document.querySelector('.countdown-card').innerHTML = "<h1>Election Day is Here!</h1>";
+                return;
+            }
+
+            // Calculations for days, hours, minutes, and seconds
+            const days = Math.floor(timeRemaining / (1000 * 60 * 60 * 24));
+            const hours = Math.floor((timeRemaining % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutes = Math.floor((timeRemaining % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((timeRemaining % (1000 * 60)) / 1000);
+
+            // Output formatted values
+            document.getElementById("days").textContent = String(days).padStart(2, '0');
+            document.getElementById("hours").textContent = String(hours).padStart(2, '0');
+            document.getElementById("minutes").textContent = String(minutes).padStart(2, '0');
+            document.getElementById("seconds").textContent = String(seconds).padStart(2, '0');
+        }
+
+        // Run immediately and update every second
+        updateCountdown();
+        setInterval(updateCountdown, 1000);
+    </script>
+
+</body>
+</html>
